@@ -19,11 +19,11 @@ restService.use(bodyParser.json());
 
 restService.post('/weatherinfo', (req, res) => {
     // Get the city and date from the request
-    let var1 = req.body.result.parameters['var1']; // city is a required param
+    let city = req.body.result.parameters['city']; // city is a required param
     // Get the date for the weather forecast (if present)
    
     // Call the weather API
-   translate(var1, {from: 'en', to: 'nl'}).then(res => {
+   translate(city, {from: 'en', to: 'nl'}).then(res => {
  
 	
 	  res.setHeader('Content-Type', 'application/json');
