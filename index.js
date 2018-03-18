@@ -23,7 +23,7 @@ restService.post('/weatherinfo', (req, res) => {
     // Get the date for the weather forecast (if present)
    
     // Call the weather API
-   translate(any1, {from: 'en', to: 'nl'}).then(res => {
+   translate(var1, {from: 'en', to: 'nl'}).then(res => {
  
 	
 	  res.setHeader('Content-Type', 'application/json');
